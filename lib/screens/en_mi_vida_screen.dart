@@ -58,49 +58,6 @@ class _EnMiVidaScreenState extends State<EnMiVidaScreen> {
               child: Chewie(controller: _chewieController),
             ),
             const SizedBox(height: 16),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                IconButton(
-                  icon: Icon(_videoPlayerController.value.volume == 0 ? Icons.volume_off : Icons.volume_up),
-                  onPressed: () {
-                    setState(() {
-                      if (_videoPlayerController.value.volume == 0) {
-                        _videoPlayerController.setVolume(1);
-                      } else {
-                        _videoPlayerController.setVolume(0);
-                      }
-                    });
-                  },
-                ),
-                IconButton(
-                  icon: const Icon(Icons.fast_rewind),
-                  onPressed: () {
-                    _videoPlayerController.seekTo(Duration(seconds: _videoPlayerController.value.position.inSeconds - 10));
-                  },
-                ),
-                IconButton(
-                  icon: Icon(_videoPlayerController.value.isPlaying ? Icons.pause : Icons.play_arrow),
-                  onPressed: () {
-                    if (_videoPlayerController.value.isPlaying) {
-                      _videoPlayerController.pause();
-                    } else {
-                      _videoPlayerController.play();
-                    }
-                  },
-                ),
-                IconButton(
-                  icon: const Icon(Icons.fast_forward),
-                  onPressed: () {
-                    _videoPlayerController.seekTo(Duration(seconds: _videoPlayerController.value.position.inSeconds + 10));
-                  },
-                ),
-                IconButton(
-                  icon: const Icon(Icons.speed),
-                  onPressed: togglePlaybackSpeed,
-                ),
-              ],
-            ),
           ],
         ),
       ),

@@ -4,6 +4,7 @@ import 'package:interstellar/screens/personajes_screen.dart';
 import 'package:interstellar/screens/momentos_favoritos_screen.dart';
 import 'package:interstellar/screens/acerca_de_screen.dart';
 import 'package:interstellar/screens/en_mi_vida_screen.dart';
+import 'package:interstellar/screens/en_mi_vida_screen1.dart';
 import 'package:interstellar/screens/contratame_screen.dart';
 
 void main() {
@@ -18,7 +19,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'FranklinMovie :D',
       theme: ThemeData(
-        primarySwatch: Colors.red,
+        primarySwatch: Colors.lightBlue, // Cambia el color primario
+        fontFamily: 'Roboto', // Cambia la tipografía
       ),
       home: const InicioScreen(),
       routes: {
@@ -28,7 +30,8 @@ class MyApp extends StatelessWidget {
         const MomentosFavoritosScreen(),
         AcercaDeScreen.routeName: (context) => const AcercaDeScreen(),
         EnMiVidaScreen.routeName: (context) => const EnMiVidaScreen(),
-        ContratameScreen.routeName: (context) => ContratameScreen(),
+        EnMiVidaScreen2.routeName: (context) => const EnMiVidaScreen2(),
+        ContratameScreen.routeName: (context) => const ContratameScreen(),
       },
     );
   }
@@ -50,7 +53,8 @@ class _InicioScreenState extends State<InicioScreen> {
     const MomentosFavoritosScreen(),
     const AcercaDeScreen(),
     const EnMiVidaScreen(),
-     ContratameScreen(),
+    const EnMiVidaScreen2(),
+    const ContratameScreen(),
   ];
 
   @override

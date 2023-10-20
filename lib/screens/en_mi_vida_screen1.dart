@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class ContratameScreen extends StatelessWidget {
+class EnMiVidaScreen2 extends StatelessWidget {
   static const routeName = '/contratame';
 
-  const ContratameScreen({super.key});
+  const EnMiVidaScreen2({super.key});
 
   @override
   Widget build(BuildContext context) {

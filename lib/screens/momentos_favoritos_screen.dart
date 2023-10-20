@@ -84,7 +84,7 @@ class MomentosFavoritosScreen extends StatelessWidget {
                   },
                 ),
               ),
-              const Divider(thickness: 1, height: 1),
+              const Divider(thickness: 2, height: 2),
             ],
           );
         },

@@ -41,7 +41,7 @@ class _PortadaScreenState extends State<PortadaScreen> {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   image: DecorationImage(
-                    image: NetworkImage(imagen),
+                    image: AssetImage(imagen),
                     fit: BoxFit.cover,
                   ),
                 ),
