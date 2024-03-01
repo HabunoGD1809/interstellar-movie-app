@@ -19,8 +19,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'FranklinMovie :D',
       theme: ThemeData(
-        primarySwatch: Colors.lightBlue, // Cambia el color primario
-        fontFamily: 'Roboto', // Cambia la tipografía
+        primarySwatch: Colors.lightBlue,
+        fontFamily: 'Roboto',
       ),
       home: const InicioScreen(),
       routes: {
@@ -41,7 +41,7 @@ class InicioScreen extends StatefulWidget {
   const InicioScreen() : super(key: const Key('InicioScreenKey'));
 
   @override
-  _InicioScreenState createState() => _InicioScreenState();
+  State<InicioScreen> createState() => _InicioScreenState();
 }
 
 class _InicioScreenState extends State<InicioScreen> {
